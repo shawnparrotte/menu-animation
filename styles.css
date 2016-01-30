@@ -1,0 +1,86 @@
+body {
+  background-color: #2E2C2E;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+
+
+
+#slide-left {
+  transition: transform .4s;
+  transform: translateX(0);
+}
+
+#menu-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  height: 60px;
+}
+
+#h-top{
+  width: 50px;
+  height: 3px;
+  background-color: #DEDDCD;
+  margin: 15px 10px 10px 10px;
+}
+
+#h-mid{
+  width: 50px;
+  height: 3px;
+  background-color: #DEDDCD;
+  margin: 10px;
+}
+
+#h-bot{
+  width: 50px;
+  height: 3px;
+  background-color: #DEDDCD;
+  margin: 10px;
+}
+
+#shawn {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
+#menu {z-index: 1000;}
+#home {z-index: 900;}
+#about {z-index: 800;}
+#portfolio {z-index: 700;}
+#blog {z-index: 600;}
+#contact {z-index: 500;}
+
+.panel {
+  position: absolute;
+  background: linear-gradient(to top left, #222, #2E2C2E);
+  background-color: #2E2C2E;
+  width: 200px;
+  border: 1px solid #DEDDCD;
+  text-align: center;
+  transition: transform .15s;
+  transition-timing-function: ease-in-out;
+  overflow: hidden;
+  margin-left: 0;
+}
+
+.swish {
+  position: absolute;
+  background: linear-gradient(to top left, #C40000, #ED0000);
+  z-index: -100;
+  width: 350px;
+  height: 59px;
+  transform: translateX(-400px) skewX(-45deg);
+  transition-timing-function: ease-in-out;
+}
+
+h2 {
+  margin: 0;
+  padding: 15px;
+  color: #DEDDCD;
+  font-family: Arial;
+  text-shadow: 0 0 3px #333;
+}
